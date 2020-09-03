@@ -1,0 +1,25 @@
+{
+    "name": "vs-taml-support",
+    "displayName": "vs-taml-support",
+    "description": "TAML support for vscode.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.48.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "taml",
+            "aliases": ["TAML", "taml"],
+            "extensions": [".tml",".taml"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "taml",
+            "scopeName": "source.taml",
+            "path": "./syntaxes/taml.tmLanguage.json"
+        }]
+    }
+}
